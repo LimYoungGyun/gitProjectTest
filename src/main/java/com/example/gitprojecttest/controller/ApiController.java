@@ -12,6 +12,12 @@ public class ApiController {
     @PostMapping("/user")
     public Object user() {
         User user = new User();
+        user.getEmail();
+        user.getAge();
+        user.getName();
+        user.getPhoneNumber();
+        // git rebase test005
+        System.out.println(user.toString());
         return user;
     }
 }
