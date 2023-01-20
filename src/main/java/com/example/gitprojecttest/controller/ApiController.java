@@ -12,6 +12,7 @@ public class ApiController {
     @PostMapping("/user")
     public Object user() {
         User user = new User();
+        System.out.println(user.toString());
         return user;
     }
 }
